@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+body{
+    min-width: 575px;
+}
+/* HEADER + NAV */
+header{
+    width: 100%;
+}
+.logo{
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo h1 a{
+    color: #D6000D;
+    font-size: 30px;
+    font-style: oblique;
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+    list-style: none;
+    font-size: 15px;
+}
+.navigation li a{
+    color: #000;
+    transition: .5s all;
+    padding: 0 1rem;
+}
+.navigation li a:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+nav button{
+    display: none;
+    transition: .5s all;
+}
+/* MAIN + SECTIONS */
+main{
+    width: 100%;
+    padding-top: 30px;
+}
+.productImage{
+    width: 200px;
+    margin: 0 auto;
+}
+.productImage img{
+    width: 200px;
+}
+.productAdvertising{
+    text-align: center;
+    margin: 30px auto;
+}
+.productAdvertising p{
+    font-size: 15px;
+    font-weight: 700;
+}
+.productAdvertising h2{
+    font-size: 35px;
+    color: #D6000D;
+}
+.productAdvertising button{
+    border: none;
+    color: #fff;
+    background-color: #D6000D;
+    padding: 10px 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s all;
+}
+/* ============================= */
+.description{
+    margin: 150px auto 0;
+}
+.descriptionImage{
+    width: 200px;
+    margin: 2rem auto;
+}
+.descriptionImage img{
+    width: 200px;
+}
+.descriptionBox{
+    width: 80%;
+    margin: 0 auto;
+}
+.descriptionList{
+    width: 50%;
+    list-style-position: inside;
+    list-style-image: url(img/dot.png);
+    margin: 0px auto 20px;
+}
+.descriptionList li{
+    padding: 10px 0;
+}
+.descriptionBox p{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.descriptionForm{
+    width: 200px;
+    margin: 20px auto;
+}
+.descriptionForm input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #c2c2c2;
+    padding-left: 1rem;
+}
+.descriptionForm button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background-color: #D6000D;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s all;
+}
+/* ============================= */
+.comments{
+    width: 300px;
+    margin: 5rem auto 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.commentBox{
+    width: 300px;
+    height: 150px;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.photoClient{
+    width: 50px;
+    height: 50px;
+    background-color: #D6000D;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.commentText p{
+    font-size: 15px;
+    width: 220px;
+}
+.commentText h3{
+    font-size: 20px;
+    width: 220px;
+    margin: 5px 0 0;
+}
+.commentText small{
+    font-size: 14px;
+    font-weight: 700;
+    width: 220px;
+}
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: #000;
+    padding: 25px;
+    color: #fff;
+}
+.slogan h2{
+    font-size: 40px;
+    text-align: center;
+    font-style: oblique;
+}
+.slogan p{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.details{
+    width: 70%;
+}
+
+.about h3, .contact h3, .socialMedia h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.about p, .contact p{
+    margin-bottom: 10px;
+    font-size: 15;
+    font-weight: 300;
+}
+.contact p a{
+    margin-bottom: 10px;
+    font-size: 15;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #fff;
+}
+.socialMediaIcon i{
+    font-size: 40px;
+    color: #D6000D;
+    margin-top: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.socialMediaIcon i:hover{
+    color:  #750008;
+}
+button:hover{
+    background-color: #750008;
+}
+/* RESPONSIVO */
+@media (min-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .logo{
+        margin: 0;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav button{
+        display: block;
+        width: 100px;
+        height: 25px;
+        border: none;
+        color: #fff;
+        background-color: #D6000D;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .navigation{
+        width: 70%;
+        padding-bottom: 0;
+        justify-content: space-evenly;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .product p, .product button{
+        margin-left: -35px;
+    }
+    .description{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .descriptionImage{
+        width: 300px;
+        margin-top: -60px;
+        margin-right: 60px;
+    }
+    .descriptionImage img{
+        width: 300px;
+    }
+    .descriptionList li{
+        padding: 5px 0;
+    }
+    .descriptionForm{
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 100px;
+    }
+    .comments{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .commentBox{
+        margin: 0 15px;
+    }
+}
+@media (min-width: 992px){
+    .product{
+        width: 60%;
+    }
+    .description{
+        width: 75%;
+        justify-content: space-between;
+        margin: 5rem auto 2rem;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px 10px;
+    }
+    .slogan, .details, .socialMedia{
+    }
+    .socialMediaIcon{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .socialMedia i{
+        margin-right: 0;
+    }
+    .slogan h2, .slogan p{
+        text-align: left;
+    }
+    .details{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about{
+        width: 45%;
+    }
+}
+@media (min-width: 1200px){
+    .product{
+        width: 50%;
+    }
+    .description{
+        width: 55%;
+        justify-content: space-between;
+        margin: 5rem auto 2rem;
+    }
+    .descriptionBox p{
+        margin-left: 180px;
+    }
+    .descriptionList{
+        margin-left: 180px;
+    }
+    .descriptionForm{
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 180px;
+    }
+}
